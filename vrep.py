@@ -275,7 +275,7 @@ def simxReadVisionSensor(clientID, sensorHandle, operationMode):
 
     return ret, bool(detectionState.value!=0), auxValues2 
 
-def simxGetObjectHandle(clientID, objectName, operationMode):
+def simxGetObjectHandle(clientID: object, objectName: object, operationMode: object) -> object:
     '''
     Please have a look at the function description/documentation in the V-REP user manual
     '''
